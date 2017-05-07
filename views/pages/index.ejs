@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 
 <head>
-<title>File Metadata Microservice</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<title>PhotoFact</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 
 <body>
-  <h1>File Metadata Microservice</h1>
   <div class='container'>
-    <p>Upload a file and get its size back in bytes.</p>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" value='hue'>
-      <input type="submit" value='Get that size!'>
-    </form>
+    <h1>PhotoFact</h1>
+      <p>Get a neat fact about the uploaded picture.</p>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" value='hue'>
+        <input type="submit" value="Watson's Visual Recognition">
+      </form>
+      <% if (typeof(json)!='undefined') { %>
+        <br><br><hr>
+        <%= json[2] %>
+      <% } %>
   </div>
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script> -->
+
 </body>

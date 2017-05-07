@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background-color: #70DBDB;
+  color: green;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  text-shadow: 7px 7px 8px 	#2764aa;
+  font-size: 6em;
+  color: 	#4d4dff;
+}
+
+.container {
+  margin: auto;
+  top: 50%;
+  position: relative;
+
+  width: 50%;
+  text-align: center;
+  background-color: #70acac;
+  border-radius: 30px;
+}
