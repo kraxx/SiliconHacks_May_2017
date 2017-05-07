@@ -1,0 +1,19 @@
+{
+  "name": "irldex",
+  "version": "1.0.0",
+  "description": "\"Gives cool facts about pictures\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraxx/siliconhacksmay2017.git"
+  },
+  "author": "Justin Chow, Wes Johnson, Theo Walton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kraxx/siliconhacksmay2017/issues"
+  },
+  "homepage": "https://github.com/kraxx/siliconhacksmay2017#readme"
+}
